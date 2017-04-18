@@ -1,0 +1,16 @@
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\bin\Debug\QL_Kho.exe.config
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\bin\Debug\QL_Kho.exe
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\bin\Debug\QL_Kho.pdb
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.FrmLogin.resources
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Form1.resources
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Properties.Resources.resources
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.csproj.GenerateResource.Cache
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.exe
+c:\users\nguyen anh tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.pdb
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Gui.UC_HangHoa.resources
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Gui.UC_NCC.resources
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Gui.UC_NhapHang.resources
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Gui.UC_TimKiem.resources
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Gui.UC_XuatHang.resources
+C:\Users\Nguyen Anh Tuan\documents\visual studio 2015\Projects\QL_Kho\QL_Kho\obj\Debug\QL_Kho.Gui.UC_ThongKe.resources
