@@ -224,7 +224,7 @@ namespace QL_Kho.Data
         }
         public static DataTable xuat_ctx(string ma)
         {
-            return Dataprovider.GetData("xuat_CTX" + "'" + ma + "'");
+            return Dataprovider.GetData("xuat_CTX2" + "'" + ma + "'");
         }
         public static DataTable xuat_hh()
         {

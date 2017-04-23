@@ -11,8 +11,8 @@ namespace QL_Kho.DT0
         private string maCTX;
         private string maPX;
         private string maHH;
-        private string soLuong;
-        private string donGia;
+        private int soLuong;
+        private float donGia;
 
         public string MaCTX
         {
@@ -50,7 +50,7 @@ namespace QL_Kho.DT0
                 maHH = value;
             }
         }
-        public string SoLuong
+        public int SoLuong
         {
             get
             {
@@ -62,7 +62,7 @@ namespace QL_Kho.DT0
                 soLuong = value;
             }
         }
-        public string DonGia
+        public float DonGia
         {
             get
             {

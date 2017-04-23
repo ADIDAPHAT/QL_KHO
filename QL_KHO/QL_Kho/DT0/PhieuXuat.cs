@@ -9,8 +9,8 @@ namespace QL_Kho.DT0
     class PhieuXuat
     {
         private string maPX;
-        private string ngayXuat;
-        private string tongTien;
+        private DateTime ngayXuat;
+        private float tongTien;
         public string MaPX
         {
             get
@@ -23,7 +23,7 @@ namespace QL_Kho.DT0
                 maPX = value;
             }
         }
-        public string NgayXuat
+        public DateTime NgayXuat
         {
             get
             {
@@ -35,7 +35,7 @@ namespace QL_Kho.DT0
                 ngayXuat = value;
             }
         }
-        public string TongTien
+        public float TongTien
         {
             get
             {
