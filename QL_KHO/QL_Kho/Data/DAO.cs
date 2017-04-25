@@ -230,6 +230,10 @@ namespace QL_Kho.Data
         {
             return Dataprovider.GetData("xuat_HH");
         }
+        public static DataTable xuat_hh_tk()
+        {
+            return Dataprovider.GetData("xuat_hh_tk");
+        }
         public static DataTable xuat_ncc()
         {
             return Dataprovider.GetData("xuat_NCC");
