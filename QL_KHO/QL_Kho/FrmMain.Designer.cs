@@ -40,6 +40,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnthongke = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +49,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.Controls.Add(this.btnthongke);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btntimKiem);
             this.panel1.Controls.Add(this.btnNCC);
@@ -76,7 +78,7 @@
             this.btntimKiem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btntimKiem.BackgroundImage")));
             this.btntimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btntimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimKiem.Location = new System.Drawing.Point(-2, 290);
+            this.btntimKiem.Location = new System.Drawing.Point(-2, 241);
             this.btntimKiem.Name = "btntimKiem";
             this.btntimKiem.Size = new System.Drawing.Size(172, 43);
             this.btntimKiem.TabIndex = 1;
@@ -87,7 +89,7 @@
             // btnNCC
             // 
             this.btnNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNCC.Location = new System.Drawing.Point(0, 224);
+            this.btnNCC.Location = new System.Drawing.Point(-2, 180);
             this.btnNCC.Name = "btnNCC";
             this.btnNCC.Size = new System.Drawing.Size(172, 43);
             this.btnNCC.TabIndex = 1;
@@ -98,7 +100,7 @@
             // btnhangHoa
             // 
             this.btnhangHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhangHoa.Location = new System.Drawing.Point(-2, 157);
+            this.btnhangHoa.Location = new System.Drawing.Point(-2, 122);
             this.btnhangHoa.Name = "btnhangHoa";
             this.btnhangHoa.Size = new System.Drawing.Size(172, 43);
             this.btnhangHoa.TabIndex = 1;
@@ -111,7 +113,7 @@
             this.btnxuatHang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnxuatHang.BackgroundImage")));
             this.btnxuatHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnxuatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxuatHang.Location = new System.Drawing.Point(0, 90);
+            this.btnxuatHang.Location = new System.Drawing.Point(-2, 61);
             this.btnxuatHang.Name = "btnxuatHang";
             this.btnxuatHang.Size = new System.Drawing.Size(172, 43);
             this.btnxuatHang.TabIndex = 1;
@@ -125,7 +127,7 @@
             this.btnnhapHang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnnhapHang.BackgroundImage")));
             this.btnnhapHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnnhapHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnhapHang.Location = new System.Drawing.Point(0, 15);
+            this.btnnhapHang.Location = new System.Drawing.Point(-2, 0);
             this.btnnhapHang.Name = "btnnhapHang";
             this.btnnhapHang.Size = new System.Drawing.Size(172, 43);
             this.btnnhapHang.TabIndex = 1;
@@ -174,6 +176,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO";
             // 
+            // btnthongke
+            // 
+            this.btnthongke.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthongke.BackgroundImage")));
+            this.btnthongke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnthongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthongke.Location = new System.Drawing.Point(-2, 300);
+            this.btnthongke.Name = "btnthongke";
+            this.btnthongke.Size = new System.Drawing.Size(172, 43);
+            this.btnthongke.TabIndex = 3;
+            this.btnthongke.Text = "Thống kê";
+            this.btnthongke.UseVisualStyleBackColor = true;
+            this.btnthongke.Click += new System.EventHandler(this.btnthongke_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +221,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnthongke;
     }
 }
 

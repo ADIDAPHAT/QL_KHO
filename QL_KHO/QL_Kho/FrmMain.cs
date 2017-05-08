@@ -88,5 +88,17 @@ namespace QL_Kho
         {
 
         }
+
+        private void btnthongke_Click(object sender, EventArgs e)
+        {
+            UC_ThongKe a = new UC_ThongKe();
+            a.Dock = DockStyle.Fill;
+            panel2.Controls.Add(a);
+            foreach (Control ctrl in panel2.Controls)
+            {
+                if (ctrl != a)
+                    ctrl.Dispose();
+            }
+        }
     }
 }
