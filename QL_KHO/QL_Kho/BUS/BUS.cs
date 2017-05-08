@@ -32,6 +32,10 @@ namespace QL_Kho.BUS
         {
             return DAO.xuat_hh();
         }
+        public static DataTable xuat_hh_tk()
+        {
+            return DAO.xuat_hh_tk();
+        }
         public static DataTable xuat_ncc()
         {
             return DAO.xuat_ncc();
