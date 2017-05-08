@@ -50,10 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgvphieuNhap = new System.Windows.Forms.DataGridView();
             this.dgvCTN = new System.Windows.Forms.DataGridView();
-            this.btnthem2 = new System.Windows.Forms.Button();
-            this.btnsua2 = new System.Windows.Forms.Button();
-            this.btnxoa2 = new System.Windows.Forms.Button();
-            this.btnluu2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvphieuNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTN)).BeginInit();
@@ -112,10 +108,10 @@
             // 
             // txt_soLuong
             // 
-            this.txt_soLuong.Location = new System.Drawing.Point(439, 214);
+            this.txt_soLuong.Location = new System.Drawing.Point(439, 223);
             this.txt_soLuong.Multiline = true;
             this.txt_soLuong.Name = "txt_soLuong";
-            this.txt_soLuong.Size = new System.Drawing.Size(109, 29);
+            this.txt_soLuong.Size = new System.Drawing.Size(126, 20);
             this.txt_soLuong.TabIndex = 35;
             // 
             // txtsoLuong
@@ -178,10 +174,10 @@
             // 
             // txtdonGia
             // 
-            this.txtdonGia.Location = new System.Drawing.Point(439, 173);
+            this.txtdonGia.Location = new System.Drawing.Point(439, 182);
             this.txtdonGia.Multiline = true;
             this.txtdonGia.Name = "txtdonGia";
-            this.txtdonGia.Size = new System.Drawing.Size(109, 26);
+            this.txtdonGia.Size = new System.Drawing.Size(126, 20);
             this.txtdonGia.TabIndex = 55;
             // 
             // txtmaCTN
@@ -189,7 +185,7 @@
             this.txtmaCTN.Location = new System.Drawing.Point(439, 83);
             this.txtmaCTN.Multiline = true;
             this.txtmaCTN.Name = "txtmaCTN";
-            this.txtmaCTN.Size = new System.Drawing.Size(109, 27);
+            this.txtmaCTN.Size = new System.Drawing.Size(126, 22);
             this.txtmaCTN.TabIndex = 56;
             // 
             // DG
@@ -214,10 +210,10 @@
             // 
             // txtmaHH
             // 
-            this.txtmaHH.Location = new System.Drawing.Point(439, 129);
+            this.txtmaHH.Location = new System.Drawing.Point(439, 135);
             this.txtmaHH.Multiline = true;
             this.txtmaHH.Name = "txtmaHH";
-            this.txtmaHH.Size = new System.Drawing.Size(109, 24);
+            this.txtmaHH.Size = new System.Drawing.Size(126, 20);
             this.txtmaHH.TabIndex = 60;
             // 
             // label2
@@ -276,65 +272,12 @@
             this.dgvCTN.ReadOnly = true;
             this.dgvCTN.Size = new System.Drawing.Size(316, 117);
             this.dgvCTN.TabIndex = 63;
-            this.dgvCTN.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTN_CellContentClick);
-            // 
-            // btnthem2
-            // 
-            this.btnthem2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnthem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem2.Location = new System.Drawing.Point(568, 74);
-            this.btnthem2.Name = "btnthem2";
-            this.btnthem2.Size = new System.Drawing.Size(68, 36);
-            this.btnthem2.TabIndex = 64;
-            this.btnthem2.Text = "Thêm2";
-            this.btnthem2.UseVisualStyleBackColor = false;
-            this.btnthem2.Click += new System.EventHandler(this.btnthem2_Click);
-            // 
-            // btnsua2
-            // 
-            this.btnsua2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnsua2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua2.Location = new System.Drawing.Point(566, 123);
-            this.btnsua2.Name = "btnsua2";
-            this.btnsua2.Size = new System.Drawing.Size(70, 36);
-            this.btnsua2.TabIndex = 65;
-            this.btnsua2.Text = "Sửa2";
-            this.btnsua2.UseVisualStyleBackColor = false;
-            this.btnsua2.Click += new System.EventHandler(this.btnsua2_Click);
-            // 
-            // btnxoa2
-            // 
-            this.btnxoa2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnxoa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa2.Location = new System.Drawing.Point(566, 165);
-            this.btnxoa2.Name = "btnxoa2";
-            this.btnxoa2.Size = new System.Drawing.Size(70, 36);
-            this.btnxoa2.TabIndex = 66;
-            this.btnxoa2.Text = "Xóa2";
-            this.btnxoa2.UseVisualStyleBackColor = false;
-            this.btnxoa2.Click += new System.EventHandler(this.btnxoa2_Click);
-            // 
-            // btnluu2
-            // 
-            this.btnluu2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnluu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnluu2.Location = new System.Drawing.Point(566, 207);
-            this.btnluu2.Name = "btnluu2";
-            this.btnluu2.Size = new System.Drawing.Size(70, 36);
-            this.btnluu2.TabIndex = 67;
-            this.btnluu2.Text = "Lưu2";
-            this.btnluu2.UseVisualStyleBackColor = false;
-            this.btnluu2.Click += new System.EventHandler(this.btnluu2_Click);
             // 
             // UC_NhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.Controls.Add(this.btnluu2);
-            this.Controls.Add(this.btnxoa2);
-            this.Controls.Add(this.btnsua2);
-            this.Controls.Add(this.btnthem2);
             this.Controls.Add(this.dgvCTN);
             this.Controls.Add(this.dgvphieuNhap);
             this.Controls.Add(this.txttongTien);
@@ -392,9 +335,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvphieuNhap;
         private System.Windows.Forms.DataGridView dgvCTN;
-        private System.Windows.Forms.Button btnthem2;
-        private System.Windows.Forms.Button btnsua2;
-        private System.Windows.Forms.Button btnxoa2;
-        private System.Windows.Forms.Button btnluu2;
     }
 }
