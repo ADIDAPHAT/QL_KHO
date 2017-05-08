@@ -16,5 +16,20 @@ namespace QL_Kho.Gui
         {
             InitializeComponent();
         }
+
+        private void rdb_hh_CheckedChanged(object sender, EventArgs e)
+        {
+            dgvtkhh.DataSource = BUS.BUS.tk_hh();
+        }
+
+        private void rdb_nhap_CheckedChanged(object sender, EventArgs e)
+        {
+            dgvtkhh.DataSource = BUS.BUS.tk_nhap();
+        }
+
+        private void rdb_xuat_CheckedChanged(object sender, EventArgs e)
+        {
+            dgvtkhh.DataSource = BUS.BUS.tk_xuat();
+        }
     }
 }
