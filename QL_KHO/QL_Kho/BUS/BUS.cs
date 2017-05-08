@@ -11,6 +11,19 @@ namespace QL_Kho.BUS
 {
     class BUS
     {
+        //Thống kê
+        public static DataTable tk_hh()
+        {
+            return DAO.tk_hh();
+        }
+        public static DataTable tk_nhap()
+        {
+            return DAO.tk_nhap();
+        }
+        public static DataTable tk_xuat()
+        {
+            return DAO.tk_xuat();
+        }
         //xuat
         public static DataTable xuat_ctn(string ma)
         {
@@ -31,6 +44,10 @@ namespace QL_Kho.BUS
         public static DataTable xuat_hh()
         {
             return DAO.xuat_hh();
+        }
+        public static DataTable xuat_hh_tk()
+        {
+            return DAO.xuat_hh_tk();
         }
         public static DataTable xuat_ncc()
         {

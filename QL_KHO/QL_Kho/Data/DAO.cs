@@ -11,6 +11,20 @@ namespace QL_Kho.Data
 {
     class DAO
     {
+
+        //thống kê
+        public static DataTable tk_hh()
+        {
+            return Dataprovider.GetData("tk_hh");
+        }
+        public static DataTable tk_xuat()
+        {
+            return Dataprovider.GetData("tk_xuat");
+        }
+        public static DataTable tk_nhap()
+        {
+            return Dataprovider.GetData("tk_nhap");
+        }
         //thêm
         public static int them_CTN(ChiTietNhap a)
         {
@@ -229,6 +243,10 @@ namespace QL_Kho.Data
         public static DataTable xuat_hh()
         {
             return Dataprovider.GetData("xuat_HH");
+        }
+        public static DataTable xuat_hh_tk()
+        {
+            return Dataprovider.GetData("xuat_hh_tk");
         }
         public static DataTable xuat_ncc()
         {
