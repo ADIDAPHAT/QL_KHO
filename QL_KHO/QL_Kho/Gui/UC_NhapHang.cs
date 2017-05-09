@@ -14,7 +14,7 @@ namespace QL_Kho.Gui
 {
     public partial class UC_NhapHang : UserControl
     {
-        bool them1, sua1;
+        bool them1, sua1,them2 ,sua2 ;
         public UC_NhapHang()
         {
             InitializeComponent();
@@ -100,6 +100,97 @@ namespace QL_Kho.Gui
                 sua1 = false;
             }
     }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnthem2_Click(object sender, EventArgs e)
+        {
+            txtmaCTN.Enabled = true;
+            txtmaHH.Enabled = true;
+            txtdonGia.Enabled = true;
+            txt_soLuong.Enabled = true;
+            them2 = true;
+            txtmaCTN.Clear();
+            txtmaHH.Clear();
+            txtdonGia.Clear();
+            txt_soLuong.Clear();
+        }
+
+        private void btnsua2_Click(object sender, EventArgs e)
+        {
+
+            txtmaHH.Enabled = true;
+            txtdonGia.Enabled = true;
+            txt_soLuong.Enabled = true;
+            sua2 = true;
+
+        }
+
+        private void btnxoa2_Click(object sender, EventArgs e)
+        {
+            ChiTietNhap a = new ChiTietNhap();
+
+            a.MaCTN = txtmaCTN.Text.Trim();
+
+            if (BUS.BUS.xoa_CTN(a) != 0)
+            {
+                MessageBox.Show("xoa thanh cong");
+                dgvCTN.DataSource = BUS.BUS.xuat_ctn(txtma_PN.Text);
+            }
+            dgvphieuNhap.DataSource = BUS.BUS.nhap_pn();
+        }
+
+        private void btnluu2_Click(object sender, EventArgs e)
+        {
+
+            if (them2)
+            {
+                ChiTietNhap a = new ChiTietNhap();
+                a.MaPN = txtma_PN.Text.Trim();
+                a.MaCTN = txtmaCTN.Text.Trim();
+                a.MaHH = txtmaHH.Text.Trim();
+                a.DonGia = float.Parse(txtdonGia.Text);
+                a.SoLuong = int.Parse(txt_soLuong.Text);
+                if (BUS.BUS.them_ctn(a) != 0)
+                {
+                    MessageBox.Show("Them thanh cong");
+                    dgvCTN.DataSource = BUS.BUS.nhap_ctn(txtma_PN.Text);
+                }
+                them2 = false;
+                dgvphieuNhap.DataSource = BUS.BUS.nhap_pn();
+            }
+            else if (sua2)
+            {
+                ChiTietNhap a = new ChiTietNhap();
+                a.MaPN = txtma_PN.Text.Trim();
+                a.MaCTN = txtmaCTN.Text.Trim();
+                a.MaHH = txtmaHH.Text.Trim();
+                a.DonGia = float.Parse(txtdonGia.Text);
+                a.SoLuong = int.Parse(txt_soLuong.Text);
+                if (BUS.BUS.sua_ctn(a) != 0)
+                {
+                    MessageBox.Show("sua thanh cong");
+                    dgvCTN.DataSource = BUS.BUS.nhap_ctn(txtma_PN.Text);
+                }
+                sua2 = false;
+                dgvphieuNhap.DataSource = BUS.BUS.nhap_pn();
+            }
+        }
+
+        private void dgvCTN_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtmaCTN.Text = dgvCTN.CurrentRow.Cells[0].Value.ToString();
+            txtmaHH.Text = dgvCTN.CurrentRow.Cells[1].Value.ToString();
+            txtdonGia.Text = dgvCTN.CurrentRow.Cells[3].Value.ToString();
+            txt_soLuong.Text = dgvCTN.CurrentRow.Cells[2].Value.ToString();
+            txtmaCTN.Enabled = false;
+            txtmaHH.Enabled = false;
+            txtdonGia.Enabled = false;
+            txt_soLuong.Enabled = false;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
