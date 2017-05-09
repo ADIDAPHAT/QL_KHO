@@ -55,7 +55,7 @@ namespace QL_Kho
             }
             else
             {
-                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-N41GDO8\SQLEXPRESS;Initial Catalog=Quan_Ly_Kho;Integrated Security=True");
+                SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-0TRNDRA\SQLEXPRESS;Initial Catalog=Quan_Ly_Kho;Integrated Security=True");
                 con.Open();
                 string s = "select count(*) from TaiKhoan where acc='" + txtacc.Text + "'and pass='" + txtpass.Text + "'";
 

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnthongke = new System.Windows.Forms.Button();
             this.btntimKiem = new System.Windows.Forms.Button();
             this.btnNCC = new System.Windows.Forms.Button();
             this.btnhangHoa = new System.Windows.Forms.Button();
@@ -40,9 +40,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnthongke = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.hELPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -50,28 +52,31 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.Controls.Add(this.btnthongke);
-            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.btntimKiem);
             this.panel1.Controls.Add(this.btnNCC);
             this.panel1.Controls.Add(this.btnhangHoa);
             this.panel1.Controls.Add(this.btnxuatHang);
             this.panel1.Controls.Add(this.btnnhapHang);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(4, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(170, 405);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button6
+            // btnthongke
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(-2, 359);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(172, 43);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Trợ giúp";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnthongke.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthongke.BackgroundImage")));
+            this.btnthongke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnthongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthongke.Location = new System.Drawing.Point(-2, 300);
+            this.btnthongke.Name = "btnthongke";
+            this.btnthongke.Size = new System.Drawing.Size(172, 43);
+            this.btnthongke.TabIndex = 3;
+            this.btnthongke.Text = "Thống kê";
+            this.btnthongke.UseVisualStyleBackColor = true;
+            this.btnthongke.Click += new System.EventHandler(this.btnthongke_Click);
             // 
             // btntimKiem
             // 
@@ -176,18 +181,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO";
             // 
-            // btnthongke
+            // menuStrip1
             // 
-            this.btnthongke.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthongke.BackgroundImage")));
-            this.btnthongke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnthongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthongke.Location = new System.Drawing.Point(-2, 300);
-            this.btnthongke.Name = "btnthongke";
-            this.btnthongke.Size = new System.Drawing.Size(172, 43);
-            this.btnthongke.TabIndex = 3;
-            this.btnthongke.Text = "Thống kê";
-            this.btnthongke.UseVisualStyleBackColor = true;
-            this.btnthongke.Click += new System.EventHandler(this.btnthongke_Click);
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hELPToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 381);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(170, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // hELPToolStripMenuItem
+            // 
+            this.hELPToolStripMenuItem.Name = "hELPToolStripMenuItem";
+            this.hELPToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.hELPToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.hELPToolStripMenuItem.Text = "HELP";
+            this.hELPToolStripMenuItem.Click += new System.EventHandler(this.hELPToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -198,12 +209,16 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "QUAN LY KHO";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -218,10 +233,11 @@
         private System.Windows.Forms.Button btnnhapHang;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnthongke;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hELPToolStripMenuItem;
     }
 }
 
