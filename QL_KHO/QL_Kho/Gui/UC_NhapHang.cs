@@ -140,7 +140,7 @@ namespace QL_Kho.Gui
                 MessageBox.Show("xoa thanh cong");
                 dgvCTN.DataSource = BUS.BUS.xuat_ctn(txtma_PN.Text);
             }
-            dgvphieuNhap.DataSource = BUS.BUS.nhap_pn();
+            dgvphieuNhap.DataSource = BUS.BUS.xuat_pn();
         }
 
         private void btnluu2_Click(object sender, EventArgs e)
@@ -157,10 +157,10 @@ namespace QL_Kho.Gui
                 if (BUS.BUS.them_ctn(a) != 0)
                 {
                     MessageBox.Show("Them thanh cong");
-                    dgvCTN.DataSource = BUS.BUS.nhap_ctn(txtma_PN.Text);
+                    dgvCTN.DataSource = BUS.BUS.xuat_ctn(txtma_PN.Text);
                 }
                 them2 = false;
-                dgvphieuNhap.DataSource = BUS.BUS.nhap_pn();
+                dgvphieuNhap.DataSource = BUS.BUS.xuat_pn();
             }
             else if (sua2)
             {
@@ -173,10 +173,10 @@ namespace QL_Kho.Gui
                 if (BUS.BUS.sua_ctn(a) != 0)
                 {
                     MessageBox.Show("sua thanh cong");
-                    dgvCTN.DataSource = BUS.BUS.nhap_ctn(txtma_PN.Text);
+                    dgvCTN.DataSource = BUS.BUS.xuat_ctn(txtma_PN.Text);
                 }
                 sua2 = false;
-                dgvphieuNhap.DataSource = BUS.BUS.nhap_pn();
+                dgvphieuNhap.DataSource = BUS.BUS.xuat_pn();
             }
         }
 
