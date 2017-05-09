@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 using QL_Kho.Gui;
 
@@ -99,6 +100,11 @@ namespace QL_Kho
                 if (ctrl != a)
                     ctrl.Dispose();
             }
+        }
+
+        private void hELPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://quanlykho.comeze.com/");
         }
     }
 }
