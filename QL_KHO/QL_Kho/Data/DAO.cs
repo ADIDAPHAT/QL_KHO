@@ -36,7 +36,7 @@ namespace QL_Kho.Data
                 new SqlParameter("@soLuong", a.SoLuong),
                 new SqlParameter("@donGia", a.DonGia),
             };
-            return Dataprovider.ExecuteNonQuery("themCTN", para);
+            return Dataprovider.ExecuteNonQuery("them_CTN", para);
         }
         public static int them_CTX(ChiTietXuat a)
         {
@@ -230,7 +230,7 @@ namespace QL_Kho.Data
         }
         public static DataTable xuat_ctn(string ma)
         {
-            return Dataprovider.GetData("xuat_CTN" + "'" + ma + "'");
+            return Dataprovider.GetData("xuat_CTN2" + "'" + ma + "'");
         }
         public static DataTable xuat_px()
         {
